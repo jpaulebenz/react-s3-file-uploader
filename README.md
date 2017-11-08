@@ -1,5 +1,5 @@
 # React S3 File Uploader : react-s3-file-uploader
-=======================
+
 
 Upload to S3 bucket using cognito service.
 
