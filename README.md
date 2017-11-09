@@ -67,5 +67,9 @@ $ npm run build
 ```
 Note: If you dont have permisson running npm commands use sudo user
 
+Main code in : 
+```
+https://github.com/jpaulebenz/react-s3-file-uploader/blob/master/src/App.js
+
 
 
