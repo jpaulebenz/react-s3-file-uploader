@@ -13,6 +13,9 @@ http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-phot
 * NODE 8.1.2
 * NPM 5.4.1
 
+##### AWS SDK NPM : https://www.npmjs.com/package/aws-sdk
+* npm install aws-sdk
+
 ##### AWS Bucket Configurations :
 
 * Bucket Policy & CORS configuration
