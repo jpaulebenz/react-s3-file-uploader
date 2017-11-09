@@ -3,11 +3,11 @@ import './App.css';
 import AWS from 'aws-sdk';
 
 //s3 bucket 
-const albumBucketName = 'albumBucketName';
+const albumBucketName = 'alecia-test';
 //s3 bucket region
-const bucketRegion = 'bucketRegion';
+const bucketRegion = 'us-east-1';
 //cognito pool id
-const IdentityPoolId = 'IdentityPoolId';
+const IdentityPoolId = 'us-east-1:12c54804-a9c5-4cf9-8561-d956675f13b7';
 //AWS configuration
 AWS.config.update({
     region: bucketRegion,
@@ -34,14 +34,16 @@ class App extends Component {
             Key: photoKey,
             Body: file,
             ACL: 'public-read'
-        }, function(err, data) {
+        }).on('httpUploadProgress', function(evt) {
+            console.log("Uploaded :: " + parseInt((evt.loaded * 100) / evt.total)+'%');
+        }).send(function(err, data) {
             if (err) {
                 console.log(err);
                 return alert('There was an error uploading your file: ', err.message);
             }
             alert('Successfully uploaded file.');
             console.log(data);
-        });
+        })
     }
     render() {
         return (<div className="App">
