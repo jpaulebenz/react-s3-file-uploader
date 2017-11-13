@@ -3,11 +3,11 @@ import './App.css';
 import AWS from 'aws-sdk';
 
 //s3 bucket 
-const albumBucketName = 'alecia-test';
+const albumBucketName = 'BucketName';
 //s3 bucket region
-const bucketRegion = 'us-east-1';
+const bucketRegion = 'BucketRegion';
 //cognito pool id
-const IdentityPoolId = 'us-east-1:12c54804-a9c5-4cf9-8561-d956675f13b7';
+const IdentityPoolId = 'AWSCOGNITOIDENTYPOOLID';
 //AWS configuration
 AWS.config.update({
     region: bucketRegion,
