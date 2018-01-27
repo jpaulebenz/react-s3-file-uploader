@@ -1,5 +1,7 @@
 # React S3 File Uploader : react-s3-file-uploader
 
+[![build status](https://img.shields.io/travis/reactjs/react-redux/master.svg?style=flat-square)](https://travis-ci.org/jpaulebenz/react-s3-file-uploader)
+
 
 Upload to S3 bucket using cognito service.
 
