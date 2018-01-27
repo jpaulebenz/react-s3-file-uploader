@@ -35,7 +35,7 @@ class App extends Component {
             Body: file,
             ACL: 'public-read'
         }).on('httpUploadProgress', function(evt) {
-            console.log("Uploaded :: " + parseInt((evt.loaded * 100) / evt.total)+'%');
+            console.log("Uploaded :: " + parseInt((evt.loaded * 100) / evt.total,3)+'%');
         }).send(function(err, data) {
             if (err) {
                 console.log(err);
